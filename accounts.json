@@ -1,24 +1,36 @@
-﻿[
+[
   {
-    "$id": "1",
+    "$id": "19",
     "$type": "SourceTree.Api.Host.Identity.Model.IdentityAccount, SourceTree.Api.Host.Identity",
+    "IsDefault": false,
     "Authenticate": true,
     "HostInstance": {
-      "$id": "2",
-      "$type": "SourceTree.Host.Atlassianaccount.AtlassianAccountInstance, SourceTree.Host.AtlassianAccount",
+      "$id": "20",
+      "$type": "SourceTree.Host.Bitbucket.BitbucketInstance, SourceTree.Host.Bitbucket",
       "Host": {
-        "$id": "3",
-        "$type": "SourceTree.Host.Atlassianaccount.AtlassianAccountHost, SourceTree.Host.AtlassianAccount",
-        "Id": "atlassian account"
+        "$id": "21",
+        "$type": "SourceTree.Host.Bitbucket.BitbucketHost, SourceTree.Host.Bitbucket",
+        "Id": "bitbucket"
       },
-      "BaseUrl": "https://id.atlassian.com/"
+      "BaseUrl": "https://bitbucket.org/",
+      "Protocol": "HTTPS"
     },
     "Credentials": {
-      "$id": "4",
-      "$type": "SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account",
+      "$id": "22",
+      "$type": "SourceTree.Api.Account.OAuth.TwoZero.OAuthTwoZeroCredentials, SourceTree.Api.Account.OAuth.TwoZero",
+      "AuthenticationScheme": {
+        "$type": "SourceTree.Api.Account.OAuth.TwoZero.OAuthTwoZeroBearerAuthenticationScheme, SourceTree.Api.Account.OAuth.TwoZero",
+        "Name": "OAuth",
+        "Description": "OAuth",
+        "HeaderValuePrefix": "Bearer",
+        "UsernameIsRequired": false
+      },
+      "Id": "",
       "Username": "",
-      "Email": null
-    },
-    "IsDefault": false
+      "DisplayName": null,
+      "Email": "",
+      "AvatarURL": null,
+      "EmailHash": ""
+    }
   }
 ]
